@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preloader For Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #preloader {
+            background: #ffffff url(preloader.gif) no-repeat center center;
+            background-size: 20%;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 100;
+        }
+
+        .container {
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="preloader">
+
+    </div>
+
+    <div class="container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lXGvNdV02aQ?si=1efVvzKbbMMtpBCh"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lXGvNdV02aQ?si=1efVvzKbbMMtpBCh"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lXGvNdV02aQ?si=1efVvzKbbMMtpBCh"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lXGvNdV02aQ?si=1efVvzKbbMMtpBCh"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+    </div>
+    <!-- <script>
+        let loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
+        });
+    </script> -->
+
+    <script>
+        let loader = document.getElementById("preloader");
+
+        window.addEventListener("load", function () {
+            setTimeout(function () {
+                loader.style.display = "none";
+            }, 5000);
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.8);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      display: none;
+    }
+
+    #preloader p {
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="preloader">
+  <p>Loading...</p>
+</div>
+
+<!-- Your content goes here -->
+<div id="content">
+  <!-- Your actual content -->
+  <h1>Hello, World!</h1>
+  <p>This is your content.</p>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Get the preloader element
+    var preloader = document.getElementById("preloader");
+
+    // Get the content element
+    var content = document.getElementById("content");
+
+    // Show the preloader while the content is loading
+    preloader.style.display = "flex";
+
+    // Simulate content loading with a setTimeout
+    setTimeout(function () {
+      // Hide the preloader when the content has finished loading
+      preloader.style.display = "none";
+    }, 2000); // Replace 2000 with the actual time it takes to load your content
+
+    // You can replace the setTimeout with your actual content loading logic
+  });
+</script>
+
+</body>
+</html>
